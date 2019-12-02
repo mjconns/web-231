@@ -2,7 +2,7 @@
 ============================================
 ; Title: Assignment 1.5
 ; Author: Micah Connelly
-; Date: 28 November 2019
+; Date: 01 December 2019
 ; Description: This program demonstrates the
 ; use of JavaScript values and variables
 ; in an application.
