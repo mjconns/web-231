@@ -1,0 +1,10 @@
+# IDE
+.idea
+
+# Node ddependency directories
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
