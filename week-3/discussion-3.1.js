@@ -13,14 +13,14 @@
 */
 
 // function properties
-var today = new Date();
+var today = new Date;
 var Thursday = Boolean;
 
 
 // functions
 
 // a function checking if today is Thursday and setting boolean based truthiness
-function isTodayThursday() {
+isTodayThursday() {
   if (today.getDay() == 4) {
     return Thursday = true;
   } else {
@@ -30,3 +30,5 @@ function isTodayThursday() {
 
 // output
 console.log("Is today Thursday?" + " " + isTodayThursday());
+
+// end program

@@ -14,12 +14,13 @@
 
 // import
 const header = require('./header.js');
+console.log(header.display("Micah", "Connelly", "Exercise 2.2 - Header"));
 
 // function properties
-const greeting = "Hello"
-const punctuation = "!"
+const greeting = "Hello";
+const punctuation = "!";
 myName.firstName = "Micah";
-myName.lastName = "Connelly"
+myName.lastName = "Connelly";
 
 // function
 function myName() {
