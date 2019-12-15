@@ -25,6 +25,8 @@ var var5 = "Bike";
 var var6 = "Motorcycle";
 
 // functions
+
+// sets true or false based on params
 function match(x, y) {
   if (x === y) {
     return true;
@@ -33,14 +35,18 @@ function match(x, y) {
   }
 }
 
+// logs mismatches
 function logMismatch(x, y) {
   console.log(x + " and " + y + " do not match!");
 }
 
+// logs matches
 function logMatch(x, y) {
   console.log(x + " and " + y + " do match!");
 }
 
+
+// checking for matches
 if (match(var1, var2)) {
   logMatch(var1, var2);
 } else {
