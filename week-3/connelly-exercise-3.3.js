@@ -43,3 +43,8 @@ switch (eventKeyCode) {
     console.log("Unrecognized key.")
     break;
 }
+
+// log
+console.log("variable used: " + eventKeyCode);
+
+//end program
