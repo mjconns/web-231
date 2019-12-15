@@ -3,7 +3,7 @@
  	; Title: Discussion 3.1 - Control Statements
  	; Author: Nicole Forke
  	; Date: 10 December 2019
- 	; Modified By: Nicole Forke
+ 	; Modified By: Micah Connelly
  	; Description: Program using if/else statement
  	;================================================
  	*/
