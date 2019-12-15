@@ -1,7 +1,7 @@
 /*
 ============================================
 ; Title:  week 3: Assignment 3.4
-; Authors: Micah Connelly, Proefessor Krasso (randomNumner())
+; Authors: Micah Connelly, Proefessor Krasso (randomNumber())
 ; Date:   15 December 2019
 ; Modified By: Micah Connelly
 ; Description: Assignment 3.4
