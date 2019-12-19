@@ -16,7 +16,7 @@
 
 // import
 const header = require('../week-2/header');
-console.log(header.display("Micah", "Connelly", "Assignment 4.4 - Header"));
+console.log(header.display("Micah", "Connelly", "Assignment 4.4 - Header") + '\n');
 
 // variables
 

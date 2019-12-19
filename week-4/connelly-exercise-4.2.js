@@ -16,7 +16,7 @@
 
 // import
 const header = require('../week-2/header');
-console.log(header.display("Micah", "Connelly", "Exercise 4.2 - Header"));
+console.log(header.display("Micah", "Connelly", "Exercise 4.2 - Header") + '\n');
 
 // variables
 var tastyFavorites = ["banana", "peach", "mandarins", "blueberry", "raspberry"];
