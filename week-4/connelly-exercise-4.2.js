@@ -11,7 +11,7 @@
 /*
 ; Expected output:
 ; The fruit array will be passed into the function and then be looped through to display the five pieces of fruit
-; 
+;
 */
 
 // import
@@ -19,19 +19,19 @@ const header = require('../week-2/header');
 console.log(header.display("Micah", "Connelly", "Exercise 4.2 - Header") + '\n');
 
 // variables
-var tastyFavorites = ["banana", "peach", "mandarins", "blueberry", "raspberry"];
-var l = tastyFavorites.length;
+var favFruit = ["banana", "peach", "mandarin", "blueberry", "raspberry"];
+var l = favFruit.length;
 
 // functions
 
-//function passing in array to itirate through and display fruit 
-function getFruit(x) {
+//function passing in array to itirate through and display fruit
+function getFruit(arr) {
   for (var i = 0; i < l; i++) {
-    console.log(x[i]);
+    console.log(arr[i]);
   }
 }
 
 // output calling function and passing in fruit array
-getFruit(tastyFavorites);
+getFruit(favFruit);
 
 // end program

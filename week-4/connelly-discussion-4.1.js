@@ -15,7 +15,7 @@
 */
 
 // import
-const header = require('./header.js');
+const header = require('../week-2/header');
 console.log(header.display("Micah", "Connelly", "Discussion 4.1 - Header"));
 
 // variables
