@@ -20,9 +20,8 @@
 const header = require('../week-2/header');
 console.log(header.display("Micah", "Connelly", "Discussion 5.1 - Header"));
 
-
 // variables
-var whatDay = new ();
+var whatDay = new();
 var date = new Date();
 var dayOfWeek = date.getDay(); // detDate() sets days of week as 0-6
 
