@@ -54,19 +54,37 @@ var composers = [{
   }
 ];
 
-// map, loop, & output
+// functions
 
-// rating the composers
+// maping composers by rating
+ratingComposers = composers.map(function (composer) {
+  var ratings = {
+    rating: composer.rating,
+    lastName: composer.lastName
+  }
+  return ratings;
+});
+
+// maping composers by genre
+genreComposers = composers.map(function (composer) {
+  var genres = {
+    genre: composer.genre,
+    lastName: composer.lastName
+  }
+  return genres;
+});
+
+//foreach ouputting rating results
 console.log('\n' + rating);
-rateComposers = composers.map(function (composer) {
+ratingComposers.forEach(function (composer) {
   console.log("Rating: " + composer.rating);
   console.log("Composer: " + composer.lastName);
   console.log('\n')
-})
+});
 
-// organizing composers by genre
+// foreach ouputting genre results
 console.log(genre);
-genreComposers = composers.map(function (composer) {
+genreComposers.forEach(function (composer) {
   console.log("Genre: " + composer.genre);
   console.log("Composer: " + composer.lastName);
   console.log('\n')
