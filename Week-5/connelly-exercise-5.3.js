@@ -1,10 +1,10 @@
 /*
 ;============================================
-; Title:  week 5: exercise 5.2
+; Title:  week 5: exercise 5.3
 ; Authors: Micah Connelly
 ; Date:   12 January 2020
 ; Modified By: Micah Connelly
-; Description: Object collections exercise
+; Description: Object collections exercises
 ;===========================================
 */
 
