@@ -1,24 +1,27 @@
 /*
 ;============================================
-; Title:  week 5: exercise 5.3
+; Title:  week 5: assignment 5.4
 ; Authors: Micah Connelly
 ; Date:   12 January 2020
 ; Modified By: Micah Connelly
-; Description: Object collections exercises
+; Description: Filtering/Reducing Complex Data Structures
 ;===========================================
 */
 
 /*
 ; Expected output:
-; a list composers, their genres, and my ratings for them
+; Two mapped arrays outputting composers
+; By rating
+; And by genre
 */
 
 // import
 const header = require('../week-2/header');
-console.log(header.display("Micah", "Connelly", "Exercise 5.3 - Header"));
+console.log(header.display("Micah", "Connelly", "Assignment 5.4 - Header"));
 
 // variables
-var displayVal = "-- COMPOSERS --";
+var rating = "-- COMPOSER BY RATING --";
+var genre = "-- COMPOSER BY GENRE --";
 var composers = [{
     firstName: 'Antonín ',
     lastName: 'Dvořák',
@@ -39,7 +42,7 @@ var composers = [{
   },
   {
     firstName: 'Wolfgang Amadeus',
-    lastName: ' Mozart',
+    lastName: 'Mozart',
     genre: 'Classical',
     rating: 9
   },
@@ -51,12 +54,22 @@ var composers = [{
   }
 ];
 
-// loop & output
-console.log('\n' + displayVal);
-composers.forEach(function (composers) {
-  console.log(
-    "Last Name: " + composers.lastName + ", Genre: " + composers.genre + ", Rating: " + composers.rating
-  );
+// map, loop, & output
+
+// rating the composers
+console.log('\n' + rating);
+rateComposers = composers.map(function (composer) {
+  console.log("Rating: " + composer.rating);
+  console.log("Composer: " + composer.lastName);
+  console.log('\n')
+})
+
+// organizing composers by genre
+console.log(genre);
+genreComposers = composers.map(function (composer) {
+  console.log("Genre: " + composer.genre);
+  console.log("Composer: " + composer.lastName);
+  console.log('\n')
 });
 
 // end program
