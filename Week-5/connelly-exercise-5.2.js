@@ -4,7 +4,7 @@
 ; Authors: Micah Connelly
 ; Date:   12 January 2020
 ; Modified By: Micah Connelly
-; Description:
+; Description: a foreach function
 ;===========================================
 */
 
