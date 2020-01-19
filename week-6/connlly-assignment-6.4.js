@@ -1,6 +1,6 @@
 /*
 ;============================================
-; Title:  week 6: Exercise 6.4
+; Title:  week 6: Assignment 6.4
 ; Authors: Micah Connelly
 ; Date: 2020 January 19
 ; Description: Nested Object Literals
@@ -14,7 +14,7 @@
 
 // import
 const header = require('../week-2/header');
-console.log(header.display("Micah", "Connelly", "Exercise 6.3 - Header"));
+console.log(header.display("Micah", "Connelly", "Assignment 6.4 - Header"));
 
 // variable
 var ticket;
