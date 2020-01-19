@@ -1,6 +1,6 @@
 /*
 ;============================================
-; Title:  week 5: Discussion 6.1
+; Title:  week 6: Discussion 6.1
 ; Authors: Micah Connelly
 ; Date: 2020 January 16
 ; Modified By: NA
