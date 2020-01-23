@@ -1,0 +1,83 @@
+<!-- /*
+;============================================
+; Title:  week 7: Discussion 7.1
+; Authors: Flanagan - JavaScript: The Definitive Guide, page 309
+; Modified: Micah Connelly
+; Date: 2020 January 23
+; Description: html page with 2 errors
+;===========================================
+*/
+
+/*
+; Expected output:
+; "Click me!" >
+; "Don't click me!"
+*/ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* CSS styles for this page */
+    body {
+      text-align: center;
+    }
+
+    .reveal:hover {
+      color: #008000;
+    }
+
+    .reveal * {
+      display: none;
+    }
+
+    .reveal *.handle {
+      display: block;
+    }
+
+    button:hover {
+      color: #ff0000;
+    }
+
+  </style>
+
+  <!-- functions n such go here -->
+  <script>
+    // Don't do anything until the entire document has loaded
+    window.onload = function () {
+      // Find all container elements with class "reveal"
+      var elements = doument.getElementsByClassName("reveal");
+      for (var i = 0; i < elements.length; i++) {
+        // For each one...
+        var elt = elements[i];
+        // Find the "handle" element with the container
+        var title = elt.getElementsByClassName("handle")[0];
+        // When that element is clicked, reveal the rest of the content
+        title.onclick = function () {
+          if (elt.className == "reveal") elt.className = "revealed";
+          else if (elt.className == "revealed") elt.className = "reveal";
+        }
+      }
+    };
+
+    // function to open new tab
+    function theyClicked() {
+      // confirm new tab
+      if (conirm("Are you sure??")) {
+        // designation if confirmed
+        window.location = 'https://www.google.com/', '_blank';
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <div class="reveal">
+    <h1 class="handle">Click me!</h1>
+    <button onclick="theyClicked()">Don't click me!</button>
+  </div>
+</body>
+
+</html>
