@@ -16,14 +16,6 @@
 const header = require('../week-2/header');
 console.log(header.display("Micah", "Connelly", "Exercise 7.2 - Header") + '\n');
 
-// function
-function GetEmployees(id, firstName, lastName, title) {
-  this.id = id;
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.title = title;
-};
-
 // creating employees object
 const employee = [
   new GetEmployees('1', 'Adam', 'Atkins', 'Tradesman'),
@@ -32,6 +24,14 @@ const employee = [
   new GetEmployees('4', 'Derek', 'Doolin', 'Master Metal Smith'),
   new GetEmployees('5', 'Edward', 'Essence', 'Master Carpenter')
 ];
+
+// function
+function GetEmployees(id, firstName, lastName, title) {
+  this.id = id;
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.title = title;
+};
 
 // looping through object
 employee.forEach(function(employee){
