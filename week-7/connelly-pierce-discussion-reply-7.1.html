@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--
+============================================
+; Title: Discussion 7.1
+; Author: Kimberly Pierce
+; Modified by: Micah Connelly
+; Date: 24 January 2020
+; Modified By: Kimberly Pierce
+; Description: JavaScript in Web Browsers with 2 Errors
+;===========================================
+const header = require('../pierce-header.js'); //import statement for header file
+console.log(header.display("Kimberly", "Pierce", "Discussion 7.1") + " \n ");
+-->
+
+
+<head>
+  <title>Discussion 7.1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .poem,
+    .poem2 {
+      display: none;
+    }
+
+  </style>
+</head>
+
+
+<body>
+  <button onclick="show()">Click Me First</button>
+  <p class="poem">
+    The Road goes ever on and on,<br>
+    Down from the door where it began.<br>
+    Now far ahead the Road has gone,<br>
+    And I must follow, if I can,<br>
+    Pursuing it with eager feet,<br>
+    Until it joins some larger way<br>
+    Where many paths and errands meet.<br>
+    And whither then? I cannot say.<br>
+  </p>
+
+  <p class="poem2">
+    The Road goes ever on and on <br>
+    Out from the door where it began.<br>
+    Now far ahead the Road has gone,<br>
+    Let others follow it who can!<br>
+    Let them a journey new begin,<br>
+    But I at last with weary feet<br>
+    Will turn towards the lighted inn,<br>
+    My evening-rest and sleep to meet.<br>
+  </p>
+
+  <button onclick="reveal()">Now Click Me</button>
+
+  <script>
+    //declare variable for function declared for first button
+    var show = document.querySelector("show");
+    //declare value for variable to be appended to second <p>
+
+    //Micah fix: added missing quatation mark and semicolon to end of variable "author"
+    var author = "-J.R.R Tolkien";
+    //append variable author to second <p>
+    document.querySelector(".poem2").append(author);
+
+    // method for function show for first button
+    show = function () {
+      document.querySelector(".poem").style.display = "block"
+    }
+    //method for function reveal for second button
+    reveal = function () {
+      //Micah fix: corrected class reference to ".poem2"
+      document.querySelector(".poem2").style.display = "block"
+    }
+
+  </script>
+
+
+</body>
+
+<!-- Micah fix: Broken closing html tag -->
+</html>

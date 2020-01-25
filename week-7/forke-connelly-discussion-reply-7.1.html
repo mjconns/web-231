@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- Title:  Discussion 7.1 -->
+<!-- Author: Nicole Forke -->
+<!-- Date: 21 January 2020 -->
+<!-- Modified By: Nicole Forke -->
+<!-- Description: Nested Object Literals -->
+<!-- Expected Output:
+  I Like Chicken! (in xx large font) -->
+
+<html lan="en">
+
+<head>
+  <title>Discussion 7.1</title>
+  <!-- CSS for font -->
+  <style>
+    body {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 12px;
+      text-decoration-color: black;
+    }
+
+  </style>
+
+  <!-- Change the font size from 12px to xx large font -->
+  <script>
+    //Create Function to Change Size and Color
+    function color() {
+      document.getElementById("chicken").style.fontSize = "xx-large";
+    }
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Embedded Javascript</h1>
+    <p id="chicken" onclick="color()">I Like Chicken!</p>
+    <!-- <button onclick=color()>test</button> -->
+  </header>
+</body>
+</html>
