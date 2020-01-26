@@ -1,0 +1,79 @@
+<!-- /*
+;============================================
+; Title:  week 7: Exercise 7.3
+; Author: Micah Connelly
+; Date:   26 January 2020
+; Description: Client Side JavaScript
+;===========================================
+*/
+
+/*
+; Expected output:
+; Shopping list v1 w/ contents
+; Shopping list v2 w/ contents
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>BU homework</title>
+    <!-- root directory css file -->
+    <link rel="stylesheet" type="text/css" href="..\site.css">
+  </head>
+
+  <body>
+
+    <!-- create ordered list -->
+    <script>
+      document.write(`
+    <h1>SHOPPING LIST v.1</h1>
+    <ol>
+      <li>Chicken</li>
+        <li>Rice</li>
+        <li>Broccoli</li>
+        <li>Peanuts</li>
+        <li>Bananas</li>
+    </ol>`);
+    </script>
+
+    <!-- div for shopping list v2 -->
+    <div id="list"></div>
+
+    <!-- inserting html into div -->
+    <script>
+      document.getElementById('list').innerHTML =
+        "<h1>SHOPPING LIST v.2</h1>" +
+        "<table>" +
+        "<thead>" +
+        "<tr>" +
+        "<th>ID</th>" +
+        "<th>Item</th>" +
+        "</tr>" +
+        "</thead>" +
+        "<tbody>" +
+        "<tr><td>Chicken</td></tr>" +
+        "<tr><td>Rice</td></tr>" +
+        "<tr><td>Broccoli</td></tr>" +
+        "<tr><td>Peanuts</td></tr>" +
+        "<tr><td>Bananas</td></tr>" +
+        "</tbody>"
+      "</table>"
+    </script>
+
+  <!--generating ID for shopping list v.2 -->
+    <script>
+      var contents = document.getElementsByTagName('table');
+      var content = contents[contents.length - 1];
+      var rows = content.rows;
+      for (var i = 1, td; i < rows.length; i++) {
+        td = document.createElement('td');
+        td.appendChild(document.createTextNode(i + 0));
+        rows[i].insertBefore(td, rows[i].firstChild);
+      }
+    </script>
+
+  </body>
+
+</html>
