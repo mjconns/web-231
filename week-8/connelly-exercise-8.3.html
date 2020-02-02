@@ -1,0 +1,108 @@
+<!-- /*
+;============================================
+; Title:  week 8: Exercise 8.3
+; Author: Micah Connelly
+; Date: 2 February 2020
+; Description: jQuery examples
+;===========================================
+
+*/
+
+/*
+; output a banner
+; output generic text with a toggle button
+; output a clickable table of fruit
+
+*/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BU homework</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- root directory css file -->
+  <link rel="stylesheet" type="text/css" href="../site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="topBar"></div>
+
+  <div>
+    <h3>An HTML Title</h3>
+    <p id="loremIpsum">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at libero lobortis, congue purus hendrerit,
+      lobortis lacus. Mauris eros mauris, maximus vitae varius at, cursus et sem. Ut libero nisi, feugiat quis accumsan
+      ut, hendrerit sed dolor. Cras tempus elit sed urna viverra egestas. Curabitur ut faucibus ligula. Vestibulum quis
+      ex ac nunc fringilla laoreet. Morbi placerat quam suscipit arcu malesuada, id malesuada sapien pharetra. Sed
+      sodales enim et velit suscipit maximus. Aenean mattis mattis ex, id condimentum nunc fermentum in. Integer eget
+      quam consequat leo malesuada tempor.
+    </p>
+    <button id="hideShow">Toggle</button>
+  </div>
+
+  <br>
+
+  <div id="fruits"></div>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#hideShow").click(function () {
+        $("#loremIpsum").toggle();
+      });
+    });
+
+  </script>
+
+  <script>
+    //array of 5 fruits
+    var fruits = [{
+        id: '1',
+        type: 'Apple',
+      },
+      {
+        id: '2',
+        type: 'Orange',
+      },
+      {
+        id: '3',
+        type: 'Banana',
+      },
+      {
+        id: '4',
+        type: 'Raspberry',
+      },
+      {
+        id: '5',
+        type: 'Cranberries',
+      }
+    ]
+
+    //creating table and looping array
+    var display = "<table><tr><th>Id </th><th>Type</th></tr>";
+    for (var f = 0; f < fruits.length; f++) {
+      var insert = fruits[f].id;
+      display += "<tr><td class=fruitClick>" + ` <a href="">${insert}</a> ` + "</td><td>" + fruits[f].type +
+        "</td></tr>";
+    }
+    document.getElementById('fruits').innerHTML = display;
+
+    //click event for selected fruit
+    $(function () {
+      $(".fruitClick").click(function (event) {
+        event.preventDefault();
+        var id = $(this).text();
+        var type = $(this).closest("td").next().text();
+        alert(`Id: ${id}\nType: ${type}`);
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

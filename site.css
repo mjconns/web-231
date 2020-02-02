@@ -7,8 +7,31 @@
 ;===========================================
 */
 
+body {
+  font-family: "Robot", sans-serif;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#topBar {
+  padding-top: 10px;
+  background-color: #ff0000;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+#emps tbody tr:hover {
+  cursor: pointer;
+  background-color: #ffff99;
+}
+
+h2 {
+  font-weight: 500;
+}
+
 table {
   border-collapse: collapse;
+  font-weight: 400;
 }
 
 td,
@@ -16,6 +39,7 @@ th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 5px;
+  font-weight: 300;
 }
 
 th {
